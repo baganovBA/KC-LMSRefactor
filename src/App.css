@@ -14,18 +14,79 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 0px 25px;
+  background-color: white;
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border-bottom: 1px gray solid;
+  box-shadow: 0px 0px 4px rgba(44, 62, 70, 0.25);
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  /*font-size: calc(10px + 2vmin);*/
+  /*color: white;*/
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.settingsButton{
+  margin: 0px 20px 0px 0px;
+}
+
+.settingsButton .anticon-setting > svg{
+  /*width: 0.8em;*/
+  /*height: 0.8em;*/
+
+}
+
+.portal-langs .anticon-minus{
+  transform: rotate(0.75turn);
+  padding: 0;
+  margin: 0;
+
+}
+.portal-langs{
+
+}
+.portal-langs .anticon-minus >svg{
+  /*transform: rotate(0.75turn);*/
+
+}
+.portal-langs .ant-btn{
+  padding-inline-start: 7px;
+  border-radius: 5px;
+  width: 180px;
+  /*text-align: start;*/
+  display: flex;
+  align-items: center;
+
+}
+
+.ant-btn > .anticon{
+  line-height: 0;
+}
+
+.portal-langs .ant-btn .anticon-down {
+  margin-inline-start:auto;
+
+}
+
+.App-header .account_menu{
+  margin-inline-start: 15px;
+}
+.App-header .account_menu .ant-btn{
+  border-radius: 5px;
+}
+
+.portal-langs__lang-name{
+  color: darkgrey;
+}
+
+.help-tooltip{
+  margin-inline-end: 15px ;
 }
 
 @keyframes App-logo-spin {
