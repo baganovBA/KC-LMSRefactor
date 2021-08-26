@@ -22,8 +22,8 @@ i18n
             caches: ['cookie']
         },
         backend:{
-            loadPath:"http://api.loc/v2/mui/?lang={{lng}}&code=all&groups%5B%5D=LMSErrors&groups%5B%5D=LMSLayout&groups%5B%5D=LMSPage",
-            addPath:"http://api.loc/v2/mui/?lang=en&code=all&groups%5B%5D=LMSPortalSettings&token=50fa6243b321204d054dd8f525bd37ec",
+            loadPath:"http://api.loc/v2/mui/?lang={{lng}}&code=all&groups%5B%5D={{ns}}",
+            addPath:"http://api.loc/v2/mui/?lang={{en}}&code=all&groups%5B%5D={{ns}}&token=50fa6243b321204d054dd8f525bd37ec",
             parse: function (data){
                 data = JSON.parse(data)
                 let translateObj ={};

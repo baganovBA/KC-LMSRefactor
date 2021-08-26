@@ -1,4 +1,5 @@
 import {makeAutoObservable, makeObservable} from 'mobx';
+import GetCookie from '../GetCookie.js'
 import axios from "axios";
 
 export default class PortalLangs {

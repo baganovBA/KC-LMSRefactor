@@ -2,6 +2,7 @@ import React from 'react';
 import {makeAutoObservable} from "mobx";
 import PortalLangs from "./PortalLangs.js";
 import MuiIndex from "./muiIndex.js";
+import LicenseUsers from "./LicenseUsers.js";
 
 
 class Store {
@@ -10,6 +11,7 @@ class Store {
         return(async()=>{
             this.portalLangs = await new PortalLangs(this)
             this.muiIndex =  await new MuiIndex(this);
+            this.LicenseUsers = await new LicenseUsers(this)
             return this
         })()
     }

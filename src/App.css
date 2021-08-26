@@ -48,8 +48,8 @@
   margin: 0;
 
 }
-.portal-langs{
-
+.portal-langs .anticon-line{
+  margin:0 !important;
 }
 .portal-langs .anticon-minus >svg{
   /*transform: rotate(0.75turn);*/
@@ -62,7 +62,9 @@
   /*text-align: start;*/
   display: flex;
   align-items: center;
-
+}
+.portal-langs .ant-btn span{
+  margin-left: 2px;
 }
 
 .ant-btn > .anticon{
@@ -79,6 +81,14 @@
 }
 .App-header .account_menu .ant-btn{
   border-radius: 5px;
+}
+.ant-menu-item-selected{
+  border-left: 3px solid orange;
+  color: black;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+   background-color: transparent;
 }
 
 .portal-langs__lang-name{
